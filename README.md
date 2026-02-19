@@ -11,6 +11,9 @@ Last line MATERIAL sends material info to START_PRINT macro.
 
 How to use:
 copy or upload **mat_zofset.cfg** file to your klipper config.
+add a include at start of your printer.cfg
+<img width="253" height="42" alt="image" src="https://github.com/user-attachments/assets/a8dcaecb-01e4-45ec-82f8-805d04a102ce" />
+
 
 at start of your start_print macro call it by this command: 
 DETECT_MATERIAL
