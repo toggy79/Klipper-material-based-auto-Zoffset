@@ -24,7 +24,7 @@ That line just checks for material and displays info at terminal.
 Real correction is done AFTER the bed mesh.
 <img width="263" height="70" alt="image" src="https://github.com/user-attachments/assets/4addf427-6726-4721-9bd9-66fef2006117" />
 
-Command APPLY_Z_OFFSET_MATERIAL makes babby step adjustment to Z in order to get same Zoffset for same type of material. Every PLA will have the same zofsset, PETG zofset will be same for all petg-s, etc...
+Command APPLY_Z_OFFSET_MATERIAL makes babby step adjustment to Z in order to get same Zoffset for same type of material. It displays info at terminal. Every PLA will have the same zofsset, PETG zofset will be same for all petg-s, etc...
 
 You need to tune values from macro:
 <img width="341" height="210" alt="image" src="https://github.com/user-attachments/assets/8f96483d-e029-4360-92b0-c0390b48ef52" />
