@@ -1,2 +1,41 @@
 # Klipper-material-based-auto-Zoffset
 This is klipper macro wich sets Z offset based on defined values, Useffull for precise tuning.
+You need klipper and some type of probe.
+
+In order this to work you need to parse material variable from Orca slicer to start_print macro.
+
+PRINT_START BED_TEMP=[bed_temperature_initial_layer_single] EXTRUDER_TEMP=[nozzle_temperature_initial_layer] MATERIAL=[filament_type]
+
+These are my Orca slicer printer, machine gcode. I use PRINT_START instead START_PRINT..IT IS OPTIONAL, NAME MUST BE SAME AS THE MACRO.
+Last line MATERIAL sends material info to START_PRINT macro.
+
+How to use:
+copy or upload **mat_zofset.cfg** file to your klipper config.
+
+at start of your start_print macro call it by this command: 
+DETECT_MATERIAL
+
+<img width="257" height="142" alt="image" src="https://github.com/user-attachments/assets/73d809bb-d968-4781-9be9-9833d91ddb65" />
+
+That line just checks for material and displays info at terminal.
+Real correction is done AFTER the bed mesh.
+<img width="263" height="70" alt="image" src="https://github.com/user-attachments/assets/4addf427-6726-4721-9bd9-66fef2006117" />
+
+Command APPLY_Z_OFFSET_MATERIAL makes babby step adjustment to Z in order to get same Zoffset for same type of material. Every PLA will have the same zofsset, PETG zofset will be same for all petg-s, etc...
+
+You need to tune values from macro:
+<img width="341" height="210" alt="image" src="https://github.com/user-attachments/assets/8f96483d-e029-4360-92b0-c0390b48ef52" />
+
+Those values are based on your probe calibration. Not same for everyone.
+Tip: zerro all the values and write new ones. Make some simple single layer object and print,adjust in real time zofset with klipper buttons
+<img width="456" height="121" alt="image" src="https://github.com/user-attachments/assets/433a754c-e770-479c-9ee6-0741466643ff" />
+and after succesfull first layer for given material write down that value to macro.
+Some people asks what is the point of this? You can fine tune Zofset, all is done in real time, no storing values, your probe calibratin holds same value.
+I print on a mirror, so i can see the difference. I will probably add a bed type detection, flat or textured.
+
+Enjoy.
+Nikola
+toggy79
+
+
+
