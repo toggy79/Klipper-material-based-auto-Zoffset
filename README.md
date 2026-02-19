@@ -34,7 +34,7 @@ You need to tune values from macro:
 Those values are based on your probe calibration. Not same for everyone.
 Tip: zerro all the values and write new ones. Make some simple single layer object and print,adjust in real time zofset with klipper buttons
 <img width="456" height="121" alt="image" src="https://github.com/user-attachments/assets/433a754c-e770-479c-9ee6-0741466643ff" />
-and after succesfull first layer for given material write down that value to macro.
+and after succesfull first layer for given material write down that value to macro. Minus values are closer to the bed , positive are further, all based on your probe ofset.
 Some people asks what is the point of this? You can fine tune Zofset, all is done in real time, no storing values, your probe calibratin holds same value.
 I print on a mirror, so i can see the difference. I will probably add a bed type detection, flat or textured.
 
