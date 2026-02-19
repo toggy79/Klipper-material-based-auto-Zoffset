@@ -23,6 +23,8 @@ DETECT_MATERIAL
 That line just checks for material and displays info at terminal.
 Real correction is done AFTER the bed mesh.
 <img width="263" height="70" alt="image" src="https://github.com/user-attachments/assets/4addf427-6726-4721-9bd9-66fef2006117" />
+After bed mesh line add command: APPLY_Z_OFFSET_MATERIAL
+Turn of SET_GCODE_OFFSET Z=0.0 line if you got it inside startprint macro.
 
 Command APPLY_Z_OFFSET_MATERIAL makes babby step adjustment to Z in order to get same Zoffset for same type of material. It displays info at terminal. Every PLA will have the same zofsset, PETG zofset will be same for all petg-s, etc...
 
