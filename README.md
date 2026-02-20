@@ -29,6 +29,7 @@ Turn of SET_GCODE_OFFSET Z=0.0 line if you got it inside startprint macro.
 Command APPLY_Z_OFFSET_MATERIAL makes babby step adjustment to Z in order to get same Zoffset for same type of material. It displays info at terminal. Every PLA will have the same zofsset, PETG zofset will be same for all petg-s, etc...
 
 You need to tune values from macro:
+
 <img width="341" height="210" alt="image" src="https://github.com/user-attachments/assets/8f96483d-e029-4360-92b0-c0390b48ef52" />
 
 Those values are based on your probe calibration. Not same for everyone.
