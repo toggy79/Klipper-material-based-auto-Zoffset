@@ -43,7 +43,7 @@ Some people asks what is the point of this? You can fine tune Zofset, all is don
 I print on a mirror, so i can see the difference. I will probably add a bed type detection, flat or textured.
 
 Enjoy.
-Nikola
+
 toggy79
 
 
