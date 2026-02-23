@@ -16,10 +16,12 @@ add a include at start of your printer.cfg
 <img width="253" height="42" alt="image" src="https://github.com/user-attachments/assets/a8dcaecb-01e4-45ec-82f8-805d04a102ce" />
 
 
-at start of your start_print macro call it by this command: 
+at start of your start_print macro call it by this command:
+
 DETECT_MATERIAL MATERIAL={MATERIAL}
 
-<img width="257" height="142" alt="image" src="https://github.com/user-attachments/assets/73d809bb-d968-4781-9be9-9833d91ddb65" />
+<img width="545" height="300" alt="image" src="https://github.com/user-attachments/assets/c040225d-7deb-425c-9d2f-4c26010e1af9" />
+
 
 That line just checks for material and displays info at terminal.
 Real correction is done AFTER the bed mesh.
