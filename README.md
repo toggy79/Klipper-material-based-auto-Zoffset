@@ -25,6 +25,7 @@ DETECT_MATERIAL MATERIAL={MATERIAL}
 
 That line just checks for material and displays info at terminal. It also checks for type of bed. Smooth or textured and adds correction for textured bed.
 Real correction is done AFTER the bed mesh.
+
 <img width="263" height="70" alt="image" src="https://github.com/user-attachments/assets/4addf427-6726-4721-9bd9-66fef2006117" />
 
 After bed mesh line add command: APPLY_Z_OFFSET_MATERIAL
@@ -42,7 +43,7 @@ Tip: zerro all the values and write new ones. Make some simple single layer obje
 <img width="456" height="121" alt="image" src="https://github.com/user-attachments/assets/433a754c-e770-479c-9ee6-0741466643ff" />
 and after succesfull first layer for given material write down that value to macro. Minus values are closer to the bed , positive are further, all based on your probe ofset.
 Some people asks what is the point of this? You can fine tune Zofset, all is done in real time, no storing values, your probe calibratin holds same value.
-I print on a mirror, so i can see the difference. I will probably add a bed type detection, flat or textured.
+I print on a mirror, so i can see the difference. 
 
 Enjoy.
 
