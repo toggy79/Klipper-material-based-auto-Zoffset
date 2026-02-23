@@ -1,5 +1,5 @@
 # Klipper-material-based-auto-Zoffset
-This is klipper macro wich sets Z offset based on defined values, Useffull for precise tuning.
+This is klipper macro wich sets Z offset based on defined material values. Useffull for precise Zoffset tuning.
 You need klipper and some type of probe.
 
 In order this to work you need to parse material variable from Orca slicer to start_print macro.
@@ -17,7 +17,7 @@ add a include at start of your printer.cfg
 
 
 at start of your start_print macro call it by this command: 
-DETECT_MATERIAL
+DETECT_MATERIAL MATERIAL={MATERIAL}
 
 <img width="257" height="142" alt="image" src="https://github.com/user-attachments/assets/73d809bb-d968-4781-9be9-9833d91ddb65" />
 
