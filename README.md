@@ -23,7 +23,7 @@ DETECT_MATERIAL MATERIAL={MATERIAL}
 <img width="545" height="300" alt="image" src="https://github.com/user-attachments/assets/c040225d-7deb-425c-9d2f-4c26010e1af9" />
 
 
-That line just checks for material and displays info at terminal.
+That line just checks for material and displays info at terminal. It also checks for type of bed. Smooth or textured and adds correction for textured bed.
 Real correction is done AFTER the bed mesh.
 <img width="263" height="70" alt="image" src="https://github.com/user-attachments/assets/4addf427-6726-4721-9bd9-66fef2006117" />
 
